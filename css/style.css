@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin:  0;
+    padding: 0;
+}
+
+body {
+    /* background-color: #2a2b2c; */
+    background-color: #313e4b;
+}
+
+a {
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+/* ===== MAIN CONTAINING ELEMENTS ===== */
+
+.bodycontainer { /* body background*/
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 100%;
+    /* margin: 0;
+    padding: 0; */
+}
+
+.bodyright {
+    width: 32%;
+    height: 100vh;
+    background-color:  #fcc02a;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    width: 80%;
+    height: 100vh;
+    margin-top: 30px;
+    margin-left: -40%;
+    background-color: #232c35;
+    border-left: 9px solid #fcc02a;
+}
+/* =====    HEADER     ===== */
+/* .header {
+display: flex;
+border: 3px solid purple;
+width: 100%;
+height: 400px;
+} */
+
+ #header-top {
+     display: flex;
+     justify-content: space-between;
+    width: 100%;
+    /* border: 1px solid paleturquoise; */
+}
+/*
+.headerleft {
+    border: 1px solid green;
+    width: 40%;
+    height: 100%;
+}
+
+#caption {
+    width: 100%;
+    border: 1px solid yellow;
+}
+
+.headerright {
+    border: 1px solid #ffffff;
+    width: 60%;
+    height: 100%;
+    
+} */
+/* ===   LOGO   === */
+
+.logo img {
+    width: 120px;
+    height: 120px;
+}
+
+/* ===   NAVIGATION   === */
+
+
+ .topnav {
+     display: flex;
+     flex-direction: column;
+     align-self: flex-end;
+     margin-right: 10px;
+     padding-bottom: 2px;
+}
+
+.nav-link a{
+    color: #f1b75e;
+    margin: 2px 4px;
+    font-size: 12px;
+}
+
+.nav-link a:hover{
+    color: #faa320;
+}
+/*
+.topnav a {
+    display: block;
+    color: #915802;
+    padding-right: 20px;
+}
+
+.topnav a:hover {
+    color: #fca829;
+}
+
+.topnav li {
+    /* border: 1px solid tomato; *//*
+    display: block;
+    width: 100%;
+    padding: 2px;
+    margin-bottom: 2px;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    font-size: 0.80em;
+} */
+
+/* ===   MEdia Queries   === */
+
+/* @media (min-width:768px) {
+
+    }
+}; */
