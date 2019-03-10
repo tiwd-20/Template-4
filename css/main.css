@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    margin:  0;
+    padding: 0;
+}
+
+body {
+    background-color: #2a2b2c;
+    font-family: 'Oxygen Mono', monospace;
+}
+/* ===== MAIN CONTAINING ELEMENTS ===== */
+#header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    height: 135px;
+    width: 100%;
+    border-bottom: 2px solid #fabc41;
+}
+
+#logo {
+    /* border: 1px solid greenyellow; */
+    width: 130px;
+    margin-left: 25px;
+    margin-top: 36px;
+}
+
+#logo img {
+    width: 100%;
+}
+
+/* ----------NAVIGATION----------- */
+
+ .navbar {
+    display: flex;
+    padding: 4px 8px;
+     /* border: 1px solid green;  */
+}
+
+.topnav {
+    display: flex;
+}
+
+.nav-link {
+    display: flex;
+    /* border: 1px solid aqua; */
+    margin: 0 5px;
+}
+
+.nav-link a {
+    color: #fabc41;
+    padding-right: 12px;
+    text-decoration: none; 
+    /* border: 1px solid red; */
+    align-self: flex-end;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 21px;
+}
+
+.nav-link a:hover {
+    color: #fdf3de;
+}
+
+.nav-link-toggle {
+    display: none;
+} 
+
+
+
+/* ------------------INTRO--------------------- */
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    height: 380px;
+    margin-top: 135px;
+    width: 100%;
+    background-color: #000000;
+}
+
+#intro img { 
+   height: 380px;
+   /* border: 1px solid white; */
+}
+
+#intro-text {
+    color: #fabc41;
+    margin-right: 20px;
+    border: 1px solid red;
+}
+
+#main-container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #999999;
+}
+
+
+/* -----------------MEDIA QUERIES---------------- */
+
+@media (max-width: 768px) {
+    .topnav,
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar {
+        justify-content: center;
+        
+    }
+
+    .fas {
+        font-size: 26px;
+    }
+
+    .topnav {
+        display: none;
+    }
+
+    .navbar__ToggleShow {
+        display: flex;
+    }
+
+    .nav-link-toggle {
+        display: initial;
+        cursor: pointer;
+        color: #fabc41;
+    }
+
+    .nav-link {
+        margin: 0 10px;
+    }
+
+}
